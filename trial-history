@@ -1,35 +1,35 @@
-1  launch.sh
-    2  git clone https://github.com/sarang7798/gogs-postgresql.git
-    3  ls
-    4  cd gogs-postgresql/
-    5  ls
-    6  vim gogs-postgresql.yaml
-    7  docker search gogs
-    8  vim gogs-postgresql.yaml
-    9  oc projects
-   10  oc create -f gogs-postgresql.yaml -n openshift
-   11  oc get pods -n openshift
-   12  oc get pods -n pro1
-   13  oc create gogs-postgresql.yaml -n pro1
-   14  oc create -f gogs-postgresql.yaml -n pro1
-   15  oc get route
-   16  oc get route -n pro1
-   17  oc get route -n openshift
-   18  oc delete all -l app=gogs-postgresql.yaml -n pro1
-   19  oc delete all -l app=gogs-postgresql.yaml
-   20  oc project pro1
-   21  oc get route
-   22  oc get pods
-   23  oc get svc
-   24  oc describe dc gogs
-   25  oc describe dc gogs | less
-   26  oc describe dc postgresql
-   27  oc get route
-   28  touch README.md
-   29  git init
-   30  git add README.md
-   31  git commit -m "first commit"
-   32  git remote add origin http://localhost:3000/sarang/new-repo.git
-   33  git push -u origin master
-   34  git remote add origin http://localhost:3000/sarang/new-repo.git
-   35  history
+launch.sh
+git clone https://github.com/sarang7798/gogs-postgresql.git
+ls
+cd gogs-postgresql/
+ls
+vim gogs-postgresql.yaml
+docker search gogs
+vim gogs-postgresql.yaml
+oc projects
+oc create -f gogs-postgresql.yaml -n openshift
+oc get pods -n openshift
+oc get pods -n pro1
+oc create gogs-postgresql.yaml -n pro1
+oc create -f gogs-postgresql.yaml -n pro1
+oc get route
+oc get route -n pro1
+oc get route -n openshift
+oc delete all -l app=gogs-postgresql.yaml -n pro1
+oc delete all -l app=gogs-postgresql.yaml
+oc project pro1
+oc get route
+oc get pods
+oc get svc
+oc describe dc gogs
+oc describe dc gogs | less
+oc describe dc postgresql
+oc get route
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin http://localhost:3000/sarang/new-repo.git
+git push -u origin master
+git remote add origin http://localhost:3000/sarang/new-repo.git
+history
