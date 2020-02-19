@@ -38,3 +38,9 @@ history
 **important command**
  1. oc get is -n openshift | grep postgresql
     ( too see if the image stream has the needed image version)
+
+*important*
+ - get route of gogs
+ - describe postgresql DC to get username and password for Gogs
+ - get svc of postgresql to add it in later Gogs dashboard
+ - in the URL section add url from address bar
